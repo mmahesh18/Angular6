@@ -1,0 +1,45 @@
+Setup:
+>npm install -g @angular/cli
+>ng update @angular/cli        
+
+>ng new myapp
+>cd myapp
+>ng serve 
+
+>ng add angular/material         (new CLI in angular 6)
+
+Angular 6 new features Summary:
+=====================
+Config file now is angular.json  instead of angular-cli.json
+wich chunk configurable support.
+
+ng add :
+ It works the same as npm, but it doesn’t replace it.
+
+ng update:   Used to upgrade the package from angular 5 to angular 6
+>ng update @angular/core
+
+Service injection at root level:
+@Injectable({providedIn:'root'})
+export class ProductService{...}
+
+<ng-template> instead of <template> 
+   which is templateRef actually at code
+
+Angular elements: To create custom elements(Web components)
+$ ng add @angular/elements
+import {createCustomElement} from '@angular/elements'
+
+Mutli-validator support in FormBuilder.
+
+Bazel compiler for optimized compilation
+IVY renderer for fast rendering
+
+new Rxjs6.0 now
+import { Observable } from 'rxjs/Observable';
+import { Subject } from 'rxjs/Subject';
+
+New stabilised angular material desing with new modules
+------------------------------------------------------
+
+

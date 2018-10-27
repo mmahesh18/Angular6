@@ -1,0 +1,21 @@
+Steps for Dynamic components:
+-----------------------------------
+
+1. create a component  ( DynamicComponent)
+2. create a service to configure component to inject and load
+    (ServiceLoader)
+3. Load ComponentFactoryResolver from Core library
+    to dynamically resolve and create component instance
+4. Inject ComponentFactoryResolver and ViewContainerRef
+    (ViewContainerRef is pointer to Shadow DOM)
+5. Set ViewContainerRef as rootContainer in a method 
+6. Create the instance of DynamicComponent using
+    ComponentFactoryResolver and Inject the component
+7. Insert the dynamically created component with hostView
+
+8. To consume wherever required(AppComponent) 
+    Inject the service and call addDynamicComponent()
+9. Configure ServiceLoader in Provider section of AppModule
+10. add DynamicComponent in EntryComponent section
+    declaration section to allow component to be injected
+    at run time for security.

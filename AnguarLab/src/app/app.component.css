@@ -1,0 +1,37 @@
+.heading{
+    background:yellow;
+    color:blue;
+    text-align:center
+}
+body {
+    background-color:blanchedalmond
+}
+.bg-success{
+    background:green;
+}
+.bg-danger{
+    background:red;
+    color:yellow;
+}
+h1{
+    background:blue;
+    color:yellow;
+    border:1px solid orange;
+    border-radius:10px;
+    margin:5px;
+    text-align:center;
+}
+h2{
+    background:lightgreen;    
+    border:1px solid yellow;
+    border-radius:10px;
+    margin:5px;
+    text-align:center
+}
+h3{
+    background:orange;    
+    border:1px solid yellow;
+    border-radius:10px;
+    margin:5px;
+    text-align:center
+}

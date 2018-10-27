@@ -1,0 +1,28 @@
+
+
+
+<h1>{{name}}</h1>
+<input type="text" [(ngModel)]="name">
+<h2>{{time}}</h2>
+
+<h3 [style.color]="titleStyle">Property Binding</h3>
+
+<button [disabled]="buttonStatus"  
+             (click)="Save($event)">
+         Redeem points now
+</button>
+
+<ng-template [ngIf]="show">
+    <h1 class="bg-danger">Angular 6 is Rocking!</h1>
+</ng-template>
+
+
+<div *ngIf="authenticated else unauthenticated">
+    <h3>Welcome to your account</h3>
+</div>
+<ng-template #unauthenticated>
+    <h3>Please login to your account</h3>    
+</ng-template>
+
+<h1>Hello ViewEncapsulation!</h1>
+<span class="red">Shadow DOM Rocks!</span>
